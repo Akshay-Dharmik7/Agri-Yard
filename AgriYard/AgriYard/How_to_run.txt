@@ -1,0 +1,12 @@
+How to run project :
+
+Install Xampp from exe
+
+extract and paste project folder in 
+C:\xampp\htdocs
+
+open http://localhost/phpmyadmin/ in chrome.. create new database named impulse101 
+
+import file impulse101.sql from folder.
+
+then run localhost/Agriyard

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgriYard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/main_index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .dropdown {
+  position: relative;
+  display: inline-block;
+  float:right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#078d41;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.center_servv{
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+div ul li a:hover {
+color: #d6960d;
+}
+</style>
+</head>
+
+
+<script>
+    // Define an array of image URLs
+  
+    const images = [
+    './imgg/bg2.jpg',
+    './imgg/bg1.jpg',
+    './imgg/1.jpg',
+  ]
+  
+   
+  let i = 0;
+
+    // Define a function to change the background image
+    function changeBackgroundImage() {
+        // Get the next image URL from the array
+        const imageUrl = images[i];
+
+        // Set the background image of the div with id "center_servv"
+        const centerServv = document.querySelector("#center_servv");
+        centerServv.style.backgroundImage = `url('${imageUrl}')`;
+        // Increment the counter
+        i++;
+
+
+        // Reset the counter to 0 if we've gone through all images
+        if (i === images.length) {
+          i = 0;
+        }
+      }
+
+      // Call the function every 5 seconds
+      setInterval(changeBackgroundImage, 5000);
+  </script>
+
+<body>
+    <div class="main clearfix">
+        <div class="main_1 clearfix">
+            <section id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="top_1 clearfix">
+                            <div class="col-sm-4">
+                                <div class="top_1l clearfix text-center">
+                                    <p class="mgt col">That's right, we sell directly from FARMERS to CONSUMERS</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="top_1m text-center clearfix">
+                                    <ul class="mgt">
+                                        <li>Follow Us</li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="top_1r text-center clearfix">
+                                    <p class="mgt col"><i class="fa fa-mobile"></i> +91-2345678910</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="header">
+                <nav class="navbar navbar-fixed-top navbar-default">
+                    <div class="container1">
+                        <div class="col-sm-12">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><i class="fa fa-leaf"></i> AgriYard</a>
+                                
+                            </div>
+
+                           
+
+                            <div class="cart-icon">
+                                <a  href="Consumer/"><i class="fa" style="font-size:30px;float:right;right:10px;padding:10px;margin-right:20px;color:goldenrod">&#61562;</i></a>
+                              </div>
+
+                            <div class="dropdown">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <h1  class="tag_menu active_tab">Login</h1>
+                                    </li>
+
+
+                                </ul>
+
+                                
+                                <div class="dropdown-content">
+                                    <ul class="nav navbar-nav navbar-right">
+
+
+                                        <li>
+                                            <a class="tag_menu active_tab" href="Farmer/">Farmer Login</a>
+                                        </li>
+    
+                                        <li>
+                                            <a class="tag_menu active_tab" href="Consumer/">Consumer Login</a>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                              </div>
+
+
+                              <ul id="nav" class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#footer"  class="tag_menu active_tab">Contact Us</a>
+                                </li>
+                            </ul>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#serv"  class="tag_menu active_tab">About Us</a>
+                                </li>
+                            </ul>
+                              
+                            
+
+                            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+
+
+                                    <li>
+                                        <a class="tag_menu active_tab" href="Farmer/">Farmer Login</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu active_tab" href="Consumer/">Consumer Login</a>
+                                    </li>
+
+                                </ul>
+                                 -->
+
+
+                                
+                                <!-- <section id="side_box">
+
+                                    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i
+                                            class="fa fa-list"></i></a>
+                                    <div id="sidebar-wrapper" class="">
+                                        <ul class="sidebar-nav">
+                                            <a id="menu-close" href="#"
+                                                class="btn btn-default btn-lg pull-right toggle"><i
+                                                    class="glyphicon glyphicon-remove"></i></a>
+                                            <li class="sidebar-brand">
+                                                <a href="index.html">AgriYard</a>
+                                            </li>
+                                        </ul>
+                                        <div class="wrap_inner clearfix text-center">
+                                        </div>
+                                        <div class="wrap_inner_2 clearfix">
+                                            <h3>CONTACT US</h3>
+                                            <input class="form-control" placeholder="Name" type="text">
+                                            <input class="form-control" placeholder="Email" type="text">
+                                            <input class="form-control" placeholder="Phone" type="text">
+                                            <textarea class="form-control form_1"
+                                                placeholder="Type Text Here"></textarea>
+                                            <h5 class="text-center"><a class="button" href="#">Subscribe</a></h5>
+                                        </div>
+
+                                    </div>
+
+                                </section> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </section>
+
+        </div>
+        <div class="main_2 clearfix">
+
+            <section id="center_servv" class="center_servv clearfix">
+                <div class="center_serv_m">
+                    <div class="container">
+                        <div class="row">
+                            <div class="center_serv_1 text-center">
+                                <div class="col-sm-12">
+                                    <h1 class="mgt col">Services & Offers</h1>
+                                    <p class="col">We make it easier for consumers to buy directly from farmers.
+                                        <br>"FARM TO HOME...." </p>
+                                </div>
+
+                                <a onMouseOver="this.style.backgroundColor='goldenrod'"
+                                onMouseOut="this.style.backgroundColor='#078d41'"  href="./Consumer" class = "btn btn-primary" style="font-size:20px;color:rgb(245, 245, 245);cursor:pointer;background-color:#078d41;">Sign Up Here To Continue...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <section id="serv_home">
+        <div class="container" id="serv">
+            <div class="row">
+                <div class="environment_1 text-center clearfix">
+                    <div class="col-sm-12">
+                        <span class="col_1"><i class="fa fa-leaf"></i></span>
+                        <h4>Products & Services</h4>
+                        <h1>Our comprehensive, balanced and diverse <br>
+                            e-commerce solutions.</h1>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="serv_home_2 clearfix">
+                        <!-- <img src="img/2.jpg" class="iw" alt="abc"> -->
+                        <img src="imgg/2.jpg" class="iw" alt="abc">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="serv_home_1 clearfix">
+                        <div class="serv_home_1i clearfix">
+                            <div class="col-sm-2 space_left">
+                                <div class="serv_home_1il clearfix">
+                                    <span><i class="fa fa-apple"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="serv_home_1ir clearfix">
+                                    <h3 class="mgt col_1">Quality Products</h3>
+                                    <p>Vegetables from farms deliver to you daily, ensuring you only eat
+                                        the best of what's in season.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv_home_1i clearfix">
+                            <div class="col-sm-2 space_left">
+                                <div class="serv_home_1il clearfix">
+                                    <span><i class="fa fa-cart-arrow-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="serv_home_1ir clearfix">
+                                    <h3 class="mgt col_1">Effective Pricing</h3>
+                                    <p>No third party envolvement cuts off the pricing, saving more money into your pockets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serv_home_1i clearfix">
+                            <div class="col-sm-2 space_left">
+                                <div class="serv_home_1il clearfix">
+                                    <span><i class="fa fa-leaf"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="serv_home_1ir clearfix">
+                                    <h3 class="mgt col_1">Farmer Profitability</h3>
+                                    <p>No taxes, charges make farmers earn more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="number">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="number_1 text-center clearfix">
+                        <h1 class="mgt col_1">0</h1>
+                        <p>Customer to farmer connections</p>
+                        <span><i class="fa fa-tree"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="number_1 text-center clearfix">
+                        <h1 class="mgt col_1">0</h1>
+                        <p>Orders delivered</p>
+                        <span><i class="fa fa-tree"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="number_1 text-center clearfix">
+                        <h1 class="mgt col_1">0</h1>
+                        <p>Product listings</p>
+                        <span><i class="fa fa-tree"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_1 clearfix">
+                    <div class="col-sm-3">
+                        <div class="footer_1l clearfix">
+                            <a class="navbar-brand" href="index.html"><i class="fa fa-leaf"></i> AgriYard</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-9" >
+                        <div class="footer_2i clearfix" style="float:right">
+                            <h4 class="col mgt" >CONTACT INFO</h4>
+                            <ul>
+                                <li>+91-2345678910</li>
+                                <li>info@agriyard.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_2 clearfix">
+                    </div>
+                    
+                </div>
+                <div class="footer_3 text-center clearfix">
+                    <p class="mgt col">© 2023 AgriYard. All Rights Reserved | 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $("#menu-close").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>
